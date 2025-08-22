@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-4" *ngFor="let student of students">
+    <app-card [student]="student"></app-card>
+    
+   
+    <a [routerLink]="['/students/details', student.id]" class="btn btn-primary mt-2">
+      Show Details
+    </a>
+  </div>
+</div>
